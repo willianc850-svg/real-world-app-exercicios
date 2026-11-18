@@ -28,7 +28,7 @@ class SignupPage {
 
     incompleteRegistrationForm() {
         cy.get(this.selectorList().firstnameField).type('Willian');
-        cy.get(this.selectorList().passwordField).type(password);
+        cy.get(this.selectorList().passwordField).type('s3cret');
     }
 
     verifyRegistrationSuccess() {

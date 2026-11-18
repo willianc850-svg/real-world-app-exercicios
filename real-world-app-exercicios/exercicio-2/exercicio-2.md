@@ -12,11 +12,35 @@ Exercício: Criação de Casos de Teste para a Feature "Enviar Dinheiro"
 
 Imagine que a feature "Enviar Dinheiro" é uma funcionalidade crítica no aplicativo Real World App. Seu objetivo é criar casos de teste para garantir que essa funcionalidade funcione corretamente. Considere os seguintes cenários como exemplo:
 
-1. Caso de Teste: Enviar dinheiro com saldo suficiente.
-   - Descrição: Verifique se é possível enviar dinheiro para um amigo quando o saldo da conta é suficiente.
- 
-2. Caso de Teste: Enviar dinheiro com saldo insuficiente.
-   - Descrição: Garanta que o sistema exiba uma mensagem de erro ao tentar enviar dinheiro sem saldo suficiente.
+### CT-01: Enviar dinheiro com saldo suficiente
+
+Pré-condições: massa de dados do RWA recriada (db:seed); usuário logado com saldo maior que o valor a enviar; pelo menos um contato disponível. Usar algum usuário da lista com a senha "s3cret".
+
+Para ver a lista de usuários:
+
+``` bash
+yarn list:dev:users
+```
+
+Passos:
+  1. Clicar em “New” (nova transação).
+  2. Selecionar um contato na lista.
+  3. Informar o valor (ex.: 25) e uma descrição.
+  4. Clicar em “Pay”.
+
+Resultado esperado: aparece a mensagem “Transaction Submitted!” e o botão “Create Another Transaction”. O saldo do remetente diminui exatamente o valor enviado.
+
+### CT-02: Enviar dinheiro com saldo insuficiente
+
+Pré-condições: as mesmas do CT-01.
+
+Passos:
+  1. Anotar o saldo atual.
+  2. Clicar em “New” e selecionar um contato.
+  3. Informar um valor maior que o saldo e uma descrição.
+  4. Clicar em “Pay”.
+
+Resultado esperado: o sistema exibe uma mensagem de erro, não conclui a transação e o saldo continua igual.
 
 ## Automação dos casos de teste
 

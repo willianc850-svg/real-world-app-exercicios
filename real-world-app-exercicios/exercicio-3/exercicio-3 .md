@@ -12,12 +12,28 @@ Exercício: Criação de Casos de Teste para a Feature "Visualizar Histórico de
 
 A funcionalidade "Visualizar Histórico de Transações" é crucial no aplicativo Real World App, permitindo aos usuários rastrear todas as transações realizadas. Vamos criar casos de teste para garantir que essa funcionalidade funcione corretamente:
 
-Caso de Teste: Visualizar histórico de transações com sucesso.
+### CT-01: Visualizar histórico de transações com sucesso
 
-Descrição: Verifique se é possível visualizar o histórico de transações de um usuário com suas transações anteriores exibidas corretamente.
-Caso de Teste: Tentar visualizar o histórico de transações de um usuário sem transações anteriores.
+Pré-condições: o Real World App está em execução em http://localhost:3000, a massa de dados foi recriada pelo seed e o usuário Wendell53 (senha s3cret) possui transações pessoais.
 
-Descrição: Garanta que o sistema exiba uma mensagem indicando que o usuário não possui transações anteriores caso tente visualizar o histórico sem transações registradas.
+Passos:
+  1. Acessar http://localhost:3000/signin.
+  2. Entrar com Wendell53 e a senha s3cret.
+  3. Abrir a aba Mine.
+
+Resultado esperado: o cabeçalho Personal aparece e a lista exibe ao menos uma transação anterior.
+
+### CT-02: Visualizar o histórico de um usuário sem transações anteriores
+
+Pré-condições: o Real World App está em execução em http://localhost:3000 e a massa de dados do seed está aplicada. O usuário do teste ainda não existe e não tem transações.
+
+Passos:
+  1. Cadastrar um usuário novo em http://localhost:3000/signup.
+  2. Entrar com esse usuário.
+  3. Concluir o onboarding criando uma conta bancária.
+  4. Abrir a aba Mine.
+
+Resultado esperado: o sistema exibe a mensagem "No Transactions" e o botão "Create A Transaction".
 
 ## Automação dos casos de teste
 

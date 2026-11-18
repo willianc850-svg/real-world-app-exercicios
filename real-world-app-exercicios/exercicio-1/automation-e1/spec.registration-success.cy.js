@@ -1,4 +1,4 @@
-import SignupPage from '../../../cypress/pages/signup';
+import SignupPage from '../../../cypress/pages/exercicio-1/signup';
 
 describe('Registro de novo usuário com sucesso', () => {
     it('Deve registrar um novo usuário com informações válidas', () => {
