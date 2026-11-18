@@ -77,52 +77,14 @@ Resultado esperado: O botão "SIGN UP" permanece desabilitado e os campos obriga
 
 ### Automação dos casos de teste
 
-**Exercício:** Automação dos Casos de Teste "Login" e "Registro de Usuário"
+Os scripts deste exercício ficam em `real-world-app-exercicios/exercicio-1/automation-e1/`. As pages ficam em `cypress/pages/exercicio-1/`.
 
-Agora que você criou os casos de teste, é hora de automatizá-los usando o Cypress.io. Certifique-se de que o projeto "Real World App" esteja configurado corretamente no seu ambiente de desenvolvimento. Crie scripts de teste para os casos de teste definidos nos exercícios anteriores:
-
-**Automação do Caso de Teste: Login com sucesso.**
-
-```javascript
-describe('Login com sucesso', () => {
-  it('Deve fazer login com um usuário válido', () => {
-    // Implemente os passos do caso de teste aqui
-  });
-});
-```
-
-**Automação do Caso de Teste: Tentar fazer login com credenciais inválidas.**
-
-```javascript
-describe('Tentar fazer login com credenciais inválidas', () => {
-  it('Deve exibir uma mensagem de erro ao fazer login com credenciais inválidas', () => {
-    // Implemente os passos do caso de teste aqui
-  });
-});
-```
-
-**Automação do Caso de Teste: Registro de novo usuário com sucesso.**
-
-```javascript
-describe('Registro de novo usuário com sucesso', () => {
-  it('Deve registrar um novo usuário com informações válidas', () => {
-    // Implemente os passos do caso de teste aqui
-  });
-});
-```
-
-**Automação do Caso de Teste: Tentar registrar um novo usuário com informações incompletas.**
-
-```javascript
-describe('Tentar registrar um novo usuário com informações incompletas', () => {
-  it('Deve exibir mensagens de erro ao tentar registrar um novo usuário sem preencher todas as informações obrigatórias', () => {
-    // Implemente os passos do caso de teste aqui
-  });
-});
-```
-
-Continue praticando e explorando outras funcionalidades do Cypress.io para criar casos de teste e automações abrangentes para todas as features do Real World App. O objetivo é se tornar um Guardião da Qualidade altamente capacitado, capaz de testar de forma eficaz e garantir a qualidade do aplicativo em todos os aspectos. 
-Boa sorte! #GuardiaoDaQualidade #AutomacaoDeTestes #CypressIO #RealWorldApp
+| Caso de teste | Spec | Page |
+| --- | --- | --- |
+| Login com sucesso | `automation-e1/spec.login-success.cy.js` | `cypress/pages/exercicio-1/login.js` |
+| Login com credenciais inválidas | `automation-e1/spec.login-fail.cy.js` | `cypress/pages/exercicio-1/login.js` |
+| Registro de novo usuário com sucesso | `automation-e1/spec.registration-success.cy.js` | `cypress/pages/exercicio-1/signup.js` |
+| Registro com informações incompletas | `automation-e1/spec.registration-fail.cy.js` | `cypress/pages/exercicio-1/signup.js` |
 
 ## LinkedIn
 

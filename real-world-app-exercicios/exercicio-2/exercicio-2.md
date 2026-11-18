@@ -44,31 +44,12 @@ Resultado esperado: o sistema exibe uma mensagem de erro, não conclui a transa�
 
 ## Automação dos casos de teste
 
-Exercício: Automação dos Casos de Teste "Enviar Dinheiro"
+Os scripts deste exercício ficam em `real-world-app-exercicios/exercicio-2/automation-e2/`. A page fica em `cypress/pages/exercicio-2/transaction.js`.
 
-Agora que você criou os casos de teste, é hora de automatizá-los usando o Cypress.io. Certifique-se de que o projeto "Real World App" esteja configurado corretamente no seu ambiente de desenvolvimento. Crie scripts de teste para os casos de teste definidos nos exercícios anteriores:
-
-
-Automação do Caso de Teste: Enviar dinheiro com saldo suficiente.
-
-```javascript
-describe('Enviar dinheiro com saldo suficiente', () => {
-  it('Deve enviar dinheiro com sucesso', () => {
-    // Implemente os passos do caso de teste aqui
-  });
-});
-```
-Automação do Caso de Teste: Enviar dinheiro com saldo insuficiente.
-
-```javascript
-describe('Enviar dinheiro com saldo insuficiente', () => {
-  it('Deve exibir mensagem de erro ao enviar dinheiro sem saldo suficiente', () => {
-    // Implemente os passos do caso de teste aqui
-  });
-});
-```
-
-Lembre-se de usar os recursos do Cypress.io, como seletores, comandos de navegação e asserções, para garantir que seus testes sejam eficazes e confiáveis. Continue praticando e explorando outras funcionalidades do Cypress para se tornar um Guardião da Qualidade bem preparado para testar o "Real World App" e outros projetos de forma profissional.
+| Caso de teste | Spec | Page |
+| --- | --- | --- |
+| Enviar dinheiro com saldo suficiente | `automation-e2/spec.send-success.cy.js` | `cypress/pages/exercicio-2/transaction.js` |
+| Enviar dinheiro com saldo insuficiente | `automation-e2/spec.send-fail.cy.js` | `cypress/pages/exercicio-2/transaction.js` |
 
 ## LinkedIn
 

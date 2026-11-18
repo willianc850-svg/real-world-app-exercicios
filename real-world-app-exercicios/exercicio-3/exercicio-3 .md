@@ -37,34 +37,12 @@ Resultado esperado: o sistema exibe a mensagem "No Transactions" e o botão "Cre
 
 ## Automação dos casos de teste
 
-Exercício: Automação dos Casos de Teste "Visualizar Histórico de Transações"
+Os scripts deste exercício ficam em `real-world-app-exercicios/exercicio-3/automation-e3/`. A page fica em `cypress/pages/exercicio-3/history.js`.
 
-Agora que você criou os casos de teste, é hora de automatizá-los usando o Cypress.io. Certifique-se de que o projeto "Real World App" esteja configurado corretamente no seu ambiente de desenvolvimento. Crie scripts de teste para os casos de teste definidos nos exercícios anteriores:
-
-Automação do Caso de Teste: Visualizar histórico de transações com sucesso.
-
-```javascript
-describe('Visualizar histórico de transações com sucesso', () => {
-  it('Deve exibir o histórico de transações de um usuário corretamente', () => {
-    // Implemente os passos do caso de teste aqui
-  });
-});
-```
-
-Automação do Caso de Teste: Tentar visualizar o histórico de transações de um usuário sem transações anteriores.
-
-```javascript
-describe('Tentar visualizar o histórico de transações sem transações anteriores', () => {
-  it('Deve exibir uma mensagem indicando que o usuário não possui transações anteriores', () => {
-    // Implemente os passos do caso de teste aqui
-  });
-});
-```
-
-Continue praticando e explorando outras funcionalidades do Cypress.io para criar casos de teste e automações abrangentes para todas as features do Real World App. O objetivo é se tornar um Guardião da Qualidade altamente capacitado, capaz de testar de forma eficaz e garantir a qualidade do aplicativo em todos os aspectos. 
-
-Boa sorte! 
-#GuardiaoDaQualidade #AutomacaoDeTestes #Cypress
+| Caso de teste | Spec | Page |
+| --- | --- | --- |
+| Visualizar histórico de transações com sucesso | `automation-e3/spec.history-success.cy.js` | `cypress/pages/exercicio-3/history.js` |
+| Histórico de um usuário sem transações anteriores | `automation-e3/spec.history-empty.cy.js` | `cypress/pages/exercicio-3/history.js` |
 
 ## LinkedIn
 
